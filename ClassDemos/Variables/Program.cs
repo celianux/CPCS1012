@@ -34,6 +34,7 @@ namespace Variables
             decimal BMI = 0.0m;
 
             //constant unchanging values are declared using the const syntax
+            //You CANNOT change the value of a const variable
 
             const decimal ImperialBMIValue = 703.0m;
 
