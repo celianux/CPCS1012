@@ -10,7 +10,7 @@ namespace CaseDecision
     {
         static void Main(string[] args)
         {
-            string gradeLetter = "C";
+            string gradeLetter = "c";
             string percentageRange;
 
             //a case structure can be used when you have a single argument value 

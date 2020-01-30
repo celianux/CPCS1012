@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicalConditions", "Logica
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseDecision", "CaseDecision\CaseDecision.csproj", "{7B186EF3-6860-4F4C-9C4B-E43829E71B5C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeQuestions", "PracticeQuestions\PracticeQuestions.csproj", "{4A9DBF93-58F3-417C-9DC0-673BD4428A5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{7B186EF3-6860-4F4C-9C4B-E43829E71B5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B186EF3-6860-4F4C-9C4B-E43829E71B5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B186EF3-6860-4F4C-9C4B-E43829E71B5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A9DBF93-58F3-417C-9DC0-673BD4428A5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A9DBF93-58F3-417C-9DC0-673BD4428A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A9DBF93-58F3-417C-9DC0-673BD4428A5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A9DBF93-58F3-417C-9DC0-673BD4428A5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
