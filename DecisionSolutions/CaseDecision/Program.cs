@@ -77,6 +77,8 @@ namespace CaseDecision
             //        }
             //}//e(nd)o(f)s(witch)
 
+            
+
             switch (gradeLetter.ToUpper())
             {
                 case "A":
@@ -120,6 +122,116 @@ namespace CaseDecision
             Console.WriteLine($"Your grade letter ({gradeLetter}) is {percentageRange}");
 
             Console.ReadKey(); //when using debugging to stop the autoclose of your display
+
+            //example 2 Print out the month name
+
+            int monthNumber = 7;
+
+            //if (monthNumber == 1)
+            //{
+
+            //}
+            //else if (monthNumber == 2) etc.
+            //There is a single argument variable
+            //This single argument variable will be tested against multiple constant values
+
+            //The case test is  an == test ONLY
+
+            switch (monthNumber)
+            {
+                case 1:
+                    {
+                        //do any logic that is required when month number is 1
+                        //this could be one line of code or 1000000 lines of code
+                        Console.WriteLine("the name of the month is January");
+                        break;
+                    }
+                case 2:
+                    {
+                        //do any logic that is required when month number is 1
+                        //this could be one line of code or 1000000 lines of code
+                        Console.WriteLine("the name of the month is February");
+                        break;
+                    }
+                case 3:
+                    {
+                        //do any logic that is required when month number is 1
+                        //this could be one line of code or 1000000 lines of code
+                        Console.WriteLine("the name of the month is March");
+                        break;
+                    }
+                case 4:
+                    {
+                        //do any logic that is required when month number is 1
+                        //this could be one line of code or 1000000 lines of code
+                        Console.WriteLine("the name of the month is April");
+                        break;
+                    }
+                case 5:
+                    {
+                        //do any logic that is required when month number is 1
+                        //this could be one line of code or 1000000 lines of code
+                        Console.WriteLine("the name of the month is May");
+                        break;
+                    }
+                case 6:
+                    {
+                        //do any logic that is required when month number is 1
+                        //this could be one line of code or 1000000 lines of code
+                        Console.WriteLine("the name of the month is June");
+                        break;
+                    }
+                case 7:
+                    {
+                        //do any logic that is required when month number is 1
+                        //this could be one line of code or 1000000 lines of code
+                        Console.WriteLine("the name of the month is July");
+                        break;
+                    }
+                case 8:
+                    {
+                        //do any logic that is required when month number is 1
+                        //this could be one line of code or 1000000 lines of code
+                        Console.WriteLine("the name of the month is August");
+                        break;
+                    }
+                case 9:
+                    {
+                        //do any logic that is required when month number is 1
+                        //this could be one line of code or 1000000 lines of code
+                        Console.WriteLine("the name of the month is September");
+                        break;
+                    }
+                case 10:
+                    {
+                        //do any logic that is required when month number is 1
+                        //this could be one line of code or 1000000 lines of code
+                        Console.WriteLine("the name of the month is October");
+                        break;
+                    }
+                case 11:
+                    {
+                        //do any logic that is required when month number is 1
+                        //this could be one line of code or 1000000 lines of code
+                        Console.WriteLine("the name of the month is November");
+                        break;
+                    }
+                case 12:
+                    {
+                        //do any logic that is required when month number is 1
+                        //this could be one line of code or 1000000 lines of code
+                        Console.WriteLine("the name of the month is December");
+                        break;
+                    }
+                default:
+                    {
+                        //this logic is done if one of the previous cases was not executed.
+                        //any necessary logic
+                        Console.WriteLine("Too late in the year to think any more.");
+                        break;
+                    }
+            }
+
 
         }
     }
