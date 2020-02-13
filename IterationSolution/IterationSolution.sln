@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterations-PostTest", "Iter
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForLoop", "ForLoop\ForLoop.csproj", "{24687B6F-53CE-48EA-93EF-E7E01EDA951C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuLoop", "MenuLoop\MenuLoop.csproj", "{A50DAC44-4285-4B99-B2AD-BA29565750F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NestedLoop", "NestedLoop\NestedLoop.csproj", "{17DC7114-30D4-47C5-A25C-19888DA0C796}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{24687B6F-53CE-48EA-93EF-E7E01EDA951C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24687B6F-53CE-48EA-93EF-E7E01EDA951C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24687B6F-53CE-48EA-93EF-E7E01EDA951C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A50DAC44-4285-4B99-B2AD-BA29565750F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A50DAC44-4285-4B99-B2AD-BA29565750F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A50DAC44-4285-4B99-B2AD-BA29565750F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A50DAC44-4285-4B99-B2AD-BA29565750F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17DC7114-30D4-47C5-A25C-19888DA0C796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17DC7114-30D4-47C5-A25C-19888DA0C796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17DC7114-30D4-47C5-A25C-19888DA0C796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17DC7114-30D4-47C5-A25C-19888DA0C796}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
