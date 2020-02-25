@@ -25,8 +25,8 @@ namespace MenuLoop
             {
                 //Prompts
                 Console.WriteLine("Select an option from the following menu");
-                Console.WriteLine("A) Do case A");
-                Console.WriteLine("B) Do case B");
+                Console.WriteLine("A) Play Even or Odd");
+                Console.WriteLine("B) Play Heads or Tails");
                 Console.WriteLine("C) Do case C");
                 Console.WriteLine("X) Exit\n");
                 Console.Write("Enter your menu option:\t");
@@ -36,16 +36,34 @@ namespace MenuLoop
                 {
                     case "A":
                         {
+
                             //place any logic to do in case A
-                            Console.WriteLine("You entered the menu option of A.\n\n");
-                            break;
+                            //Console.WriteLine("You entered the menu option of A.\n\n");
+
+                            Even_Or_Odds();
+                            break; //the break is part of the case, NOT the method
                         }
                     case "B":
                         {
+                            //Console.WriteLine("You entered the menu option of B.\n\n");
+
+
                             //place the Heads or Tails game in this case
                             //validate that an H or T was entered, if not, repeat query for input
-                            Console.WriteLine("You entered the menu option of B.\n\n");
+
+
+                            //Create a method that holds the actual code for this case 
+                            //the B case will CALL the method to execute
+                            //this action is referred to as the calling statement
+                            //calling the method requires your code to use the method name
+                            //your program will branch to the requested method
+                            //when the method has finished, your program will return 
+                            //      to the next executable statement AFTER the method call.
+
+                            Heads_Or_Tails_Game(); //calling statement
                             break;
+
+
                         }
                     case "C":
                         {
@@ -75,6 +93,142 @@ namespace MenuLoop
             }
             while (menuOption.ToUpper() != "X");
             Console.ReadKey();
-        }
+        }//eom main 
+
+        //the syntax for a method requires 
+        //Method Header
+
+        //accesstype followed by a returndatatype followed by the MethodName([list of parameters])
+        //{
+        //  your method code
+        //}//eom
+
+        //accesstype: public or private
+        //            protected, internal, have static reference
+
+        //returndatatype: if you are returning nothing use the key word void 
+        //                otherwise, return a single value such as int, double, decimal, DateTime etc.
+
+        //MethodName: continuous string of characters which will be used within 
+        //            your program code to reference this coding block
+        //            it is best to use a meaningful name
+
+        //[list of parameters] this is a set of local variables that will be used 
+        //          to receive values from the calling statement
+
+        //          a parameter is a set of datatype and variablename
+        //          parameters are separated by using a comma , 
+        
+        static public void Heads_Or_Tails_Game()
+        {
+            int headCount = 0;
+            int tailCount = 0;
+            string inputString = "";
+
+            do
+            {
+
+                //validation
+                do
+                {
+                    Console.Write("Enter an H (heads) or T (tails) or Q to quit\n");
+                    inputString = Console.ReadLine();
+
+                } while (!inputString.ToUpper().Equals("H") &&
+                        !inputString.ToUpper().Equals("T") &&
+                        !inputString.ToUpper().Equals("Q"));
+
+                if (inputString.ToUpper().Equals("H") ||
+                        inputString.ToUpper().Equals("T"))
+                {
+                    //heads or tails
+                    if (inputString.ToUpper().Equals("H"))
+                    {
+                        headCount++;
+                        Console.WriteLine($"\n {inputString.ToUpper()} is heads");
+                    }
+                    else
+                    {
+                        tailCount++; 
+                        Console.WriteLine($"\n {inputString.ToUpper()} is tails");
+                    }
+                }
+                else
+                {
+                    if(headCount > tailCount)
+                    {
+                        Console.WriteLine($"Heads wins over Tails: {headCount} to {tailCount}");
+
+                    }else if (headCount< tailCount)
+                    {
+                        Console.WriteLine($"Tails wins over Heads: {tailCount} to {headCount}");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Heads and Tails tied: {headCount} to {tailCount}");
+                    }
+                    //quit
+                    Console.WriteLine("\n\nThank you for playing.");
+                }
+
+            } while (!inputString.ToUpper().Equals("Q"));
+
+        }//eom Heads_Or_Tails_Game
+
+        static public void Even_Or_Odds()
+        {
+            int number = -1;
+            string inputString = "";
+
+            while (number != 0)
+            {
+              
+                bool validFlag = false;
+
+                do
+                {
+                    Console.Write("Enter a positive whole number OR enter 0 to quit:\t");
+                    inputString = Console.ReadLine();
+                    if (int.TryParse(inputString, out number))
+                    {
+                        validFlag = true;
+                    }
+
+                } while (validFlag == false);
+
+                if (number > 0)
+                {
+                    if (number % 2 == 0)
+                    {
+
+                        Console.WriteLine($"{number} is an even value.\n\n");
+
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{number} is an odd value.\n\n");
+                    }
+
+
+                }
+                else
+                {
+
+                    if (number == 0)
+                    {
+                        Console.WriteLine($"Thank you. Come again.\n\n");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{number} is invalid. Try Again.\n\n");
+                    }
+
+                }
+
+
+            }//eol while
+
+        }//eom Even_Or_Odds
+
     }
 }
