@@ -27,7 +27,7 @@ namespace MenuLoop
                 Console.WriteLine("Select an option from the following menu");
                 Console.WriteLine("A) Play Even or Odd");
                 Console.WriteLine("B) Play Heads or Tails");
-                Console.WriteLine("C) Do case C");
+                Console.WriteLine("C) Get the Sum of Squares");
                 Console.WriteLine("X) Exit\n");
                 Console.Write("Enter your menu option:\t");
                 menuOption = Console.ReadLine();
@@ -67,6 +67,7 @@ namespace MenuLoop
                         }
                     case "C":
                         {
+                            //Console.WriteLine("You entered the menu option of C.\n\n");
                             //the sum of squares
                             //enter a positive integer number (validate)
                             //loop n times where n is the integer number (1 to n)
@@ -74,7 +75,20 @@ namespace MenuLoop
                             //after the loop, display your integer number and its sum of squares
                             //entered 4
                             //loop 4 times 1) 1*1, 2) 2*2, 3) 3*3, 4) 4*4 final total =30
-                            Console.WriteLine("You entered the menu option of C.\n\n");
+
+                            //create a shared input method to obtain an integer value
+                            int number = GetIntegerInput("Enter a number greater than 0:\t");
+                            if(number < 1)
+                            {
+                                Console.WriteLine($"{number} is not greater than 0. Unable to calculate the sum of squares.");
+                            }
+                            else
+                            {
+                                int sumofsquares = 0;
+                                sumofsquares = SumofSquares(number); 
+                                Console.WriteLine($"{sumofsquares} is the sum of squares for {number}");
+                            }
+
                             break;
                         }
                     case "X":
@@ -178,23 +192,12 @@ namespace MenuLoop
         static public void Even_Or_Odds()
         {
             int number = -1;
-            string inputString = "";
 
             while (number != 0)
             {
               
-                bool validFlag = false;
 
-                do
-                {
-                    Console.Write("Enter a positive whole number OR enter 0 to quit:\t");
-                    inputString = Console.ReadLine();
-                    if (int.TryParse(inputString, out number))
-                    {
-                        validFlag = true;
-                    }
-
-                } while (validFlag == false);
+                number = GetIntegerInput("Enter a positive whole number OR enter 0 to quit:\t");
 
                 if (number > 0)
                 {
@@ -226,9 +229,48 @@ namespace MenuLoop
                 }
 
 
-            }//eol while
+             }//eol while
 
-        }//eom Even_Or_Odds
+        }//eom Even_Or_Odds //subroutine (a method that does not return anything)
+
+        static public int SumofSquares(int seednumber) //function (a method returning a value)
+        {
+            //loop n times where n is the integer number (1 to n)
+            //within the loop your calculation is total += loopnumber * loopnumber
+            //after the loop, display your integer number and its sum of squares
+            //entered 4
+            //loop 4 times 1) 1*1, 2) 2*2, 3) 3*3, 4) 4*4 final total =30
+            int finalsquare = 0;
+
+            for(int loopcounter = 1; loopcounter <= seednumber; loopcounter++)
+            {
+                finalsquare += loopcounter * loopcounter;
+            };
+
+            return finalsquare;
+        }
+
+        static public int GetIntegerInput(string promptline)
+        {
+            bool validFlag = false;
+            string inputString = "";
+            int number = 0;
+
+            do
+            {
+                Console.Write(promptline);
+                inputString = Console.ReadLine();
+                if (int.TryParse(inputString, out number))
+                {
+                    validFlag = true;
+                }
+
+            } while (validFlag == false);
+
+            //If your method indicates that a return datatype is specified
+            //you MUST have at least one return statement in your method code
+            return number;
+        }
 
     }
 }
