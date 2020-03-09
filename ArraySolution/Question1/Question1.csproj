@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3DC8C8F5-D2BB-44E0-BCDA-68FF62AAEF82}</ProjectGuid>
+    <ProjectGuid>{1AB50A09-BD3F-449B-8987-CC89060A651B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LoadArray</RootNamespace>
-    <AssemblyName>LoadArray</AssemblyName>
+    <RootNamespace>Question1</RootNamespace>
+    <AssemblyName>Question1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
