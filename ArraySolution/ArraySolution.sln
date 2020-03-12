@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SequentialSearchFind", "Seq
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question1", "Question1\Question1.csproj", "{1AB50A09-BD3F-449B-8987-CC89060A651B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomGen", "RandomGen\RandomGen.csproj", "{98BABBD3-1C66-4DCE-8DE4-97FB5F1AD400}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question4", "Question4\Question4.csproj", "{65A90C7E-A0DC-4865-A2D0-F8D138D85A1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{1AB50A09-BD3F-449B-8987-CC89060A651B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AB50A09-BD3F-449B-8987-CC89060A651B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AB50A09-BD3F-449B-8987-CC89060A651B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98BABBD3-1C66-4DCE-8DE4-97FB5F1AD400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98BABBD3-1C66-4DCE-8DE4-97FB5F1AD400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98BABBD3-1C66-4DCE-8DE4-97FB5F1AD400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98BABBD3-1C66-4DCE-8DE4-97FB5F1AD400}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65A90C7E-A0DC-4865-A2D0-F8D138D85A1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A90C7E-A0DC-4865-A2D0-F8D138D85A1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A90C7E-A0DC-4865-A2D0-F8D138D85A1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A90C7E-A0DC-4865-A2D0-F8D138D85A1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
