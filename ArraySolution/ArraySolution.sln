@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomGen", "RandomGen\Rand
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question4", "Question4\Question4.csproj", "{65A90C7E-A0DC-4865-A2D0-F8D138D85A1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelArrays", "ParallelArrays\ParallelArrays.csproj", "{870820BB-D563-4959-B56B-6614FEDEE038}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{65A90C7E-A0DC-4865-A2D0-F8D138D85A1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65A90C7E-A0DC-4865-A2D0-F8D138D85A1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65A90C7E-A0DC-4865-A2D0-F8D138D85A1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{870820BB-D563-4959-B56B-6614FEDEE038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{870820BB-D563-4959-B56B-6614FEDEE038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{870820BB-D563-4959-B56B-6614FEDEE038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{870820BB-D563-4959-B56B-6614FEDEE038}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
